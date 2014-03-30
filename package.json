@@ -1,0 +1,28 @@
+{
+  "name": "builder-es6-module-to-cjs",
+  "description": "builder plugin to convert ES6 modules to CJS",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "component/builder-es6-module-to-cjs",
+  "dependencies": {
+    "js-module-formats": "*",
+    "es6-module-transpiler": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "co": "*",
+    "component-builder2": "*",
+    "component-resolver": "*",
+    "gnode": "*"
+  },
+  "scripts": {
+    "test": "NODE=gnode make test"
+  }
+}
