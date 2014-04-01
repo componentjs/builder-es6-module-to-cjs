@@ -1,6 +1,6 @@
 
 var crypto = require('crypto');
-var detect = require('js-module-formats').detect;
+var isES6 = require('is-module');
 var compile = require('es6-module-transpiler').Compiler;
 
 var cache = Object.create(null);
@@ -12,9 +12,7 @@ module.exports = function (options) {
     if (file.extension !== 'js') return done();
     file.read(function (err, string) {
       if (err) return done(err);
-
-      var format = detect(string);
-      if (format !== 'es') return done();
+      if (!isES6(string)) return done();
 
       var hash = calculate(string);
 
