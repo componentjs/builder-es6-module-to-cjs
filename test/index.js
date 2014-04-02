@@ -2,7 +2,7 @@ var vm = require('vm')
 var co = require('co')
 var assert = require('assert')
 var resolve = require('component-resolver')
-var Builder = require('component-builder2');
+var Builder = require('component-builder');
 var join = require('path').join
 
 var es6modules = require('..');
@@ -32,7 +32,6 @@ describe('module-from', function () {
 
   it('should build', co(function* () {
     js += yield build(tree).end()
-    console.log(js)
   }))
 
   it('should execute', function () {

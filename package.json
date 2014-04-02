@@ -12,15 +12,15 @@
   "repository": "component/builder-es6-module-to-cjs",
   "dependencies": {
     "is-module": "^1.0.0",
-    "es6-module-transpiler": "*"
+    "es6-module-transpiler": "0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "co": "*",
-    "component-builder2": "*",
-    "component-resolver": "*",
-    "gnode": "*"
+    "mocha": "1",
+    "should": "3",
+    "co": "3",
+    "component-builder": "^1.0.0",
+    "component-resolver": "^1.0.0",
+    "gnode": "0"
   },
   "scripts": {
     "test": "NODE=gnode make test"
