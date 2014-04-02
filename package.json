@@ -1,7 +1,7 @@
 {
   "name": "builder-es6-module-to-cjs",
   "description": "builder plugin to convert ES6 modules to CJS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
