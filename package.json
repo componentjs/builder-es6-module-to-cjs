@@ -11,16 +11,16 @@
   "license": "MIT",
   "repository": "component/builder-es6-module-to-cjs",
   "dependencies": {
-    "is-module": "^1.0.0",
-    "es6-module-transpiler": "0"
+    "es6-module-jstransform": "^0.1.2",
+    "is-module": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "1",
-    "should": "3",
     "co": "3",
     "component-builder": "^1.0.0",
     "component-resolver": "^1.0.0",
-    "gnode": "0"
+    "gnode": "0",
+    "mocha": "1",
+    "should": "^3.2.0"
   },
   "scripts": {
     "test": "NODE=gnode make test"

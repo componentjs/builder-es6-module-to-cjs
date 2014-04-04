@@ -1,7 +1,7 @@
 
-var crypto = require('crypto');
+var compile = require('es6-module-jstransform');
 var isES6 = require('is-module');
-var compile = require('es6-module-transpiler').Compiler;
+var crypto = require('crypto');
 
 var cache = Object.create(null);
 
@@ -19,7 +19,7 @@ module.exports = function (options) {
       try {
         file.string =
         cache[hash] = cache[hash]
-          || new compile(string).toCJS();
+          || compile(string).code;
       } catch (err) {
         done(err);
         return
